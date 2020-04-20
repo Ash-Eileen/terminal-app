@@ -1,6 +1,6 @@
 # Welcome to Hangman! 👋
 
-## Statement of Purpose
+## Statement of Purpose and Scope
 
 Hangman is designed for enterainment purposes. If you're bored and need something to do you can turn to this hangman app. It can provide a fun distraction when you need a break using single-player mode or you can play with friends using multi-player mode.
 
