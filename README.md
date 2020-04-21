@@ -44,7 +44,10 @@ The user will be presented with a welcome message and an instruction to press an
 
 ### **Control Flow Diagram**
 
-![Terminal App Flowchart - Hangman](C:\Users\Ashley\projects\terminal-app\docs\Terminal App Flowchart - Hangman.jpg)
+[Flow Chart](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/Terminal%20App%20Flowchart%20-%20Hangman.jpg)
+
+
+![Terminal App Flowchart - Hangman](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/Terminal%20App%20Flowchart%20-%20Hangman.jpg)
 
 ------
 
