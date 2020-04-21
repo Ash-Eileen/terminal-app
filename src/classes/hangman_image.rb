@@ -7,7 +7,7 @@ class Hangman
         @lost = false
     end
 
-    def draw_hangman
+    def draw_hangman(random_word)
         case @guesses
         when 0
             puts "       "
@@ -88,6 +88,8 @@ class Hangman
             puts "--------"
             @lost = true
             puts "You lose!!"
+            puts "The word was #{random_word}"
+            sleep 1
         end
     end
 end

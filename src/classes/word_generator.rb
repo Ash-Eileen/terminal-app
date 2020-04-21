@@ -14,7 +14,7 @@ class WordGenerator
             begin
                 puts "Hello Player 1!"
                 puts "Please enter a word:"
-                @random_word = gets.strip
+                @random_word = gets.upcase.strip
                 puts "You have selected '#{random_word}'."
                 raise ArgumentError, "Word has special characters or numbers" if @random_word.scan(/[^a-zA-Z]/).length != 0 || @random_word.length == 0
             rescue ArgumentError    

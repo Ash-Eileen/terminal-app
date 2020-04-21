@@ -16,11 +16,11 @@ class GuessChecker
 
     def get_guess
         puts "Please guess a letter or word"
-        @guess = gets.strip
+        @guess = gets.upcase.strip
         until !@attempts.include?(@guess) && !@hidden_word.include?(@guess)
             puts "You've tried that before...try again..."
             puts "Please guess a letter or word"
-            @guess = gets.strip
+            @guess = gets.upcase.strip
         end
         raise ArgumentError, "Word has special characters or numbers" if @guess.scan(/[^a-zA-Z]/).length != 0 || @guess.length == 0
     rescue
@@ -37,6 +37,7 @@ class GuessChecker
     def check_guess(hangman)
         if @guess == @guessing_word.join
             puts "Wow you won! Amazing!"
+            sleep 1
             @won = true
         elsif @guessing_word.include?(@guess)
             index = 0
@@ -49,12 +50,14 @@ class GuessChecker
             puts @hidden_word.join(" ")
             if @hidden_word == @guessing_word
                 puts "Wow you won! Amazing"
+                sleep 1
                 @won = true
             end
         else
             @attempts.push(@guess)
             hangman.guesses += 1
             puts "Wrong"
+            sleep 1
         end
     end
 

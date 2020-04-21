@@ -11,13 +11,16 @@ loop do
     guess = GuessChecker.new(word.random_word)
     guess.create_hidden_word
     hangman = Hangman.new
+    
     sleep 1
     system "clear"
     until hangman.lost || guess.won
-        hangman.draw_hangman
+        hangman.draw_hangman(word.random_word)
         guess.display_hidden_and_attempts
         guess.get_guess
         guess.check_guess(hangman)
+        system "clear"
+        hangman.draw_hangman(word.random_word)
         system "clear"
     end
 end
