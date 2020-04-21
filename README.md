@@ -4,7 +4,7 @@
 
 ### **Statement of Purpose and Scope**
 
-Hangman is designed for enterainment purposes. If you're bored and need something to do you can turn to this hangman app. It can provide a fun distraction when you need a break using single-player mode or you can play with friends using multi-player mode.
+Hangman is designed for entertainment purposes. If you're bored and need something to do you can turn to this hangman app. It can provide a fun distraction when you need a break using single-player mode or you can play with friends using multi-player mode.
 
 #### **What Hangman will do**
 
@@ -12,7 +12,7 @@ There will be three executable files - one to launch single-player mode, one to 
 
 #### **Target Audience**
 
-This app is targetted towards gamers, lovers of words and anyone needing a distraction from whatever is troubling them. The user will need access to the command line so this would be more suitable to a Mac or Linux user or a developer.
+This app is targeted towards gamers, lovers of words and anyone needing a distraction from whatever is troubling them. The user will need access to the command line so this would be more suitable to a Mac or Linux user or a developer.
 
 #### **How The Audience will use Hangman**
 
@@ -32,13 +32,13 @@ The game will also include a multi-player mode. This game mode will be for 2+ pl
 
 #### **User Interface and User Experience**
 
-To try and make the terminal app more visually pleasing I'll be using a few different methods. For certain displayed messages they will give the illusion of typing from left to right using methods such as sleep before printing characters to the screen. I'll be utilising gems such as tty and colorize to break up the screen with coloured text. This will also highlight certain sections. I will also be using ASCII art for maing headings and to display cat ASCII art as I'm a big cat lover. I think this will also be a bit more fun for users when they see game over messages or title screens.
+To try and make the terminal app more visually pleasing I'll be using a few different methods. For certain displayed messages they will give the illusion of typing from left to right using methods such as sleep before printing characters to the screen. I'll be utilising gems such as tty and colorize to break up the screen with coloured text. This will also highlight certain sections. I will also be using ASCII art for main headings and to display cat ASCII art as I'm a big cat lover. I think this will also be a bit more fun for users when they see game over messages or title screens.
 
 ------
 
 ### **User Interaction and Experience**
 
-The user will be presented with a welcome message and an instruction to press any key to continue. The next display will be dependent on which excutable file is run. For the full version including both single and multi-player mode a menu will be displayed where the user can choose which version of the game they'd like to play. In single player mode the user will be taken directly to the guess screen where a random word will have been generated for them to guess. For multi-player mode one player will be prompted to enter a word to be guessed, this will be checked by the computer to ensure that the word provided doesn't include numbers or special characters. If the word is not a string without special characters or numbers then the player will be prompted to re-enter the word until it meets these requirements. The guessers/single-player will then see a number of underscores or hyphens to show the length of the word. There will also be an ASCII chacter showing where the hangman image will be displayed.  The guessers/single-player will be able to enter a single letter guess or a whole word. The input from the user will be checked to ensure it is a string with no special characters or numbers. Any entries that do not meet this requirement will not be counted as guesses. Each incorrect guess will result in the hangman image being one step closer to completion. This will continue until the word is either correctly guessed or the user runs out of tries and the full hangman image is displayed. From here a game over screen will be displayed. For a win a happy ASCII cat image will be displayed with a congratulatory message and for a loss a sad ASCII cat image will be displayed saying the game has been lost. The user will then have the option to quit or play again.
+The user will be presented with a welcome message and an instruction to press any key to continue. The next display will be dependent on which executable file is run. For the full version including both single and multi-player mode a menu will be displayed where the user can choose which version of the game they'd like to play. In single player mode the user will be taken directly to the guess screen where a random word will have been generated for them to guess. For multi-player mode one player will be prompted to enter a word to be guessed, this will be checked by the computer to ensure that the word provided doesn't include numbers or special characters. If the word is not a string without special characters or numbers, then the player will be prompted to re-enter the word until it meets these requirements. The guessers/single-player will then see a number of underscores or hyphens to show the length of the word. There will also be an ASCII character showing where the hangman image will be displayed.  The guessers/single-player will be able to enter a single letter guess or a whole word. The input from the user will be checked to ensure it is a string with no special characters or numbers. Any entries that do not meet this requirement will not be counted as guesses. Each incorrect guess will result in the hangman image being one step closer to completion. This will continue until the word is either correctly guessed or the user runs out of tries and the full hangman image is displayed. From here a game over screen will be displayed. For a win a happy ASCII cat image will be displayed with a congratulatory message and for a loss a sad ASCII cat image will be displayed saying the game has been lost. The user will then have the option to quit or play again.
 
 ------
 
@@ -52,7 +52,7 @@ The user will be presented with a welcome message and an instruction to press an
 
 ## **Implementation Plan**
 
-On day one I came to my educators with four ideas. I was leaning towards Hangman and after discussing with Nandini and Lin decided that was my best option. I had a very clear picture in my mind of how the game would work and the confidence that I could code it in the week provided. The planning for my hangman app became pretty straightfoward from there. It primarily done using the above flowchart in addition to my Trello Board. I used labelling to show what was grading criteria, what was critical to the success of the app and what would be an optional feature. I then moved items between checklists as needed.
+On day one I came to my educators with four ideas. I was leaning towards Hangman and after discussing with Nandini and Lin decided that was my best option. I had a very clear picture in my mind of how the game would work and the confidence that I could code it in the week provided. The planning for my hangman app became pretty straightforward from there. It primarily done using the above flowchart in addition to my Trello Board. I used labelling to show what was grading criteria, what was critical to the success of the app and what would be an optional feature. I then moved items between checklists as needed.
 
 [**Trello Board**](https://trello.com/b/m8qO0pkl/terminal-app-hangman)
 
