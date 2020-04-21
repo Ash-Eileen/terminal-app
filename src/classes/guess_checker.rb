@@ -41,12 +41,9 @@ class GuessChecker
             @won = true
         elsif @guessing_word.include?(@guess)
             index = 0
-            for character in @guessing_word
-                if @guess == character
-                    @hidden_word[index] = @guess 
-                end
+            @guessing_word.map { |character| @hidden_word[index] = @guess if @guess == character
                 index += 1
-            end
+            }
             puts @hidden_word.join(" ")
             if @hidden_word == @guessing_word
                 puts "Wow you won! Amazing"
