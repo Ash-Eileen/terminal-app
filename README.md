@@ -46,8 +46,17 @@ The user will be presented with a welcome message and an instruction to press an
 
 [Flow Chart](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/Terminal%20App%20Flowchart%20-%20Hangman.jpg)
 
-
 ![Terminal App Flowchart - Hangman](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/Terminal%20App%20Flowchart%20-%20Hangman.jpg)
+
+------
+
+## **Implementation Plan**
+
+On day one I came to my educators with four ideas. I was leaning towards Hangman and after discussing with Nandini and Lin decided that was my best option. I had a very clear picture in my mind of how the game would work and the confidence that I could code it in the week provided. The planning for my hangman app became pretty straightfoward from there. It primarily done using the above flowchart in addition to my Trello Board. I used labelling to show what was grading criteria, what was critical to the success of the app and what would be an optional feature. I then moved items between checklists as needed.
+
+[**Trello Board**] (https://trello.com/b/m8qO0pkl/terminal-app-hangman)
+
+![Trello Board] (https://github.com/Ash-Eileen/terminal-app/blob/master/docs/trello-board.PNG)
 
 ------
 
