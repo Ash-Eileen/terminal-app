@@ -8,6 +8,7 @@ module Menu
     PROMPT = TTY::Prompt.new
 
     def self.display_menu
+        puts "\n\n"
         Images::title
         puts Images::menu_cat.colorize(:magenta)
         selection = PROMPT.select("What would you like to do?", MENU_OPTIONS)

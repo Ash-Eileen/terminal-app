@@ -54,13 +54,14 @@ loop do
         Screens::lose
     end
 
-    puts "Play again? (y or n)"
+    puts "\nPlay again? (y or n)"
     response = STDIN.gets.strip
     until response == "y" || response == "n"
         puts "Invalid selection.\nPlay again? (y or n)"
         response = STDIN.gets.strip
     end
-
+    
+    system "clear"
     exit if response == "n"
 
 end

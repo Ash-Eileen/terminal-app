@@ -58,7 +58,7 @@ class GuessChecker
             if hangman.guesses == 9
                 system "clear"
                 puts hangman.draw_hangman
-                puts "Oh no...The hangman is out of time...the word was #{@guessing_word.join}"    
+                puts "Oh no...You hung him...the word was #{@guessing_word.join}"    
                 @lost = true
                 sleep 2
             else

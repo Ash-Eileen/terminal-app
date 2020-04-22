@@ -28,7 +28,7 @@ module Screens
 
     def self.lose
         puts Images::game_lost_cat.colorize(:blue)
-        puts "Better luck next time..."
+        puts "\n\nBetter luck next time..."
     end
 
 end
