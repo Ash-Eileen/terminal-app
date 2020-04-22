@@ -9,20 +9,20 @@ require_relative './classes/ascii_images.rb'
 require_relative './classes/menu.rb'
 require_relative './classes/screen_transitions.rb'
 
+Screens::welcome_screen
+sleep 2
+system "clear"
 
 
 loop do
-    Screens::welcome_screen
-    sleep 2
-    system "clear"
     Menu::display_menu    
+    system "clear"
+
     word = WordGenerator.new("Multi!!")
     word.generate_word
     guess = GuessChecker.new(word.random_word)
     guess.create_hidden_word
     hangman = Hangman.new
-    
-    sleep 1
     system "clear"
     until guess.lost || guess.won
         hangman.draw_hangman
