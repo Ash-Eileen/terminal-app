@@ -7,11 +7,15 @@ require_relative './classes/word_generator.rb'
 require_relative './classes/guess_checker.rb'
 require_relative './classes/ascii_images.rb'
 require_relative './classes/menu.rb'
+require_relative './classes/screen_transitions.rb'
+
 
 
 loop do
-    Menu::display_menu    
+    Screens::welcome_screen
+    sleep 2
     system "clear"
+    Menu::display_menu    
     word = WordGenerator.new("Multi!!")
     word.generate_word
     guess = GuessChecker.new(word.random_word)

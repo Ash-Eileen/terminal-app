@@ -12,6 +12,7 @@ module Screens
     end
 
     def self.welcome_screen
+        system "clear"
         fast_types("Welcome to...")
         puts "\n\n"
         sleep 0.5
@@ -30,4 +31,3 @@ module Screens
 
 end
 
-Screens::welcome_screen
