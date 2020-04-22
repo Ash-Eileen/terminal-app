@@ -11,7 +11,6 @@ require_relative './classes/screen_transitions.rb'
 
 Screens::welcome_screen
 sleep 2
-<<<<<<< HEAD
 
 loop do
     
@@ -32,18 +31,6 @@ loop do
 
     WORD.generate_word
     guess = GuessChecker.new(WORD.word)
-=======
-system "clear"
-
-
-loop do
-    Menu::display_menu    
-    system "clear"
-
-    word = WordGenerator.new("Multi!!")
-    word.generate_word
-    guess = GuessChecker.new(word.random_word)
->>>>>>> 33276d59c677123833c54a54aca100f5ca8e62ce
     guess.create_hidden_word
     hangman = Hangman.new
     system "clear"
