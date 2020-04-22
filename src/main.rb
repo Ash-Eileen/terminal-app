@@ -2,8 +2,6 @@ require 'random_word_generator'
 require 'tty-prompt'
 require 'colorize'
 require 'tty-cursor'
-require 'tty-box'
-require 'tty-link'
 
 require_relative './classes/hangman_image.rb'
 require_relative './classes/word_generator.rb'
