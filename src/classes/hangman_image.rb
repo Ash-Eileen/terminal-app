@@ -1,7 +1,7 @@
 class Hangman
 
     attr_accessor :guesses, :hangman, :lost
-
+    
     def initialize
         @guesses = 0
         @lost = false
@@ -71,8 +71,5 @@ class Hangman
     def draw_hangman
         puts @HANGMAN[@guesses]
     end
+
 end
-
-
-hangman = Hangman.new
-hangman.draw_hangman

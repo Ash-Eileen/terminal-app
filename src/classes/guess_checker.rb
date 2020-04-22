@@ -69,9 +69,3 @@ class GuessChecker
     end
 
 end
-# guess = GuessChecker.new("hello")
-# guess.create_hidden_word
-# loop do
-#     guess.get_guess
-#     guess.check_guess
-# end
