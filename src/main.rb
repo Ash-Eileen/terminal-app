@@ -2,6 +2,8 @@ require 'random_word_generator'
 require 'tty-prompt'
 require 'colorize'
 require 'tty-cursor'
+require 'tty-box'
+require 'tty-link'
 
 require_relative './classes/hangman_image.rb'
 require_relative './classes/word_generator.rb'
@@ -10,10 +12,10 @@ require_relative './classes/ascii_images.rb'
 require_relative './classes/menu.rb'
 require_relative './classes/screen_transitions.rb'
 
-cursor = TTY::Cursor
+CURSOR = TTY::Cursor
 mode = ARGV[0]
 
-cursor.invisible{
+CURSOR.invisible{
     Screens::welcome_screen
     sleep 2}
 
@@ -22,13 +24,13 @@ loop do
     system "clear"
     
     if ARGV.length == 0
-        selection = cursor.invisible {Menu::display_menu}
+        selection = CURSOR.invisible {Menu::display_menu}
     end
     
     word = WordGenerator.new
 
     if mode.to_s == "single" || selection == "Single-player"
-        cursor.invisible {word.generate_word(1)}
+        CURSOR.invisible {word.generate_word(1)}
     elsif mode.to_s == "multi" || selection == "Multi-player"
         word.generate_word("multi")
     else
@@ -41,6 +43,7 @@ loop do
     hangman = Hangman.new
     system "clear"
     until guess.lost || guess.won
+        puts Images::small_cat.colorize(:light_red)
         hangman.draw_hangman
         guess.display_hidden_and_attempts
         guess.get_guess

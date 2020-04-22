@@ -3,20 +3,20 @@ module Screens
     def self.typing(word)
         word.each_char {|character|
             print character
-            sleep(0.1)
+            sleep (0.08)
         }
     end
 
     def self.welcome_screen
         system "clear"
-        print "\n\n                         "
+        print "\n\n\n\n\n\n                                 "
         typing("Welcome to...")
         puts "\n\n\n"
         sleep 0.5
         Images::title
-        print "\n\n                         "
+        print "\n\n                                 "
         sleep 0.5
-        typing("...with cats?")
+        typing("...with cats")
         puts "\n"
 
     end
@@ -32,4 +32,3 @@ module Screens
     end
 
 end
-
