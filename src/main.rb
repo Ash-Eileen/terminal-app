@@ -9,16 +9,28 @@ require_relative './classes/ascii_images.rb'
 require_relative './classes/menu.rb'
 require_relative './classes/screen_transitions.rb'
 
-
+Screens::welcome_screen
+sleep 2
 
 loop do
-    Screens::welcome_screen
-    sleep 2
+    
     system "clear"
-    Menu::display_menu    
-    word = WordGenerator.new("Multi!!")
-    word.generate_word
-    guess = GuessChecker.new(word.random_word)
+    
+    if ARGV.length == 0
+        selection = Menu::display_menu 
+    end
+
+    if selection == "Single-player" || ARGV.join == "single"
+        WORD = WordGenerator.new(1)
+    elsif selection == "Multi-player" || ARGV.join == "multi"
+        WORD = WordGenerator.new("multi")
+    else
+        system "clear"
+        exit
+    end
+
+    WORD.generate_word
+    guess = GuessChecker.new(WORD.word)
     guess.create_hidden_word
     hangman = Hangman.new
     
@@ -31,4 +43,20 @@ loop do
         guess.check_guess(hangman)
         system "clear"
     end
+
+    if guess.won
+        Screens::win
+    else
+        Screens::lose
+    end
+
+    puts "Play again? (y or n)"
+    response = gets.strip
+    until response == "y" || response == "n"
+        puts "Invalid selection.\nPlay again? (y or n)"
+        response = gets.strip
+    end
+
+    exit if response == "n"
+    
 end
