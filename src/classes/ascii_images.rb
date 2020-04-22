@@ -68,5 +68,3 @@ $     . " . " . " . " . " . "   .."   . " . "..    "             "    .."
     end
 
 end
-
-Images::game_lost_cat

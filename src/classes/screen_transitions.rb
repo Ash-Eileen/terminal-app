@@ -1,7 +1,3 @@
-
-require 'colorize'
-require 'tty-cursor'
-
 module Screens
 
     def self.typing(word)
