@@ -1,13 +1,16 @@
 require 'random_word_generator'
-require 'tty'
+require 'tty-prompt'
 require 'colorize'
 
 require_relative './classes/hangman_image.rb'
 require_relative './classes/word_generator.rb'
 require_relative './classes/guess_checker.rb'
 require_relative './classes/ascii_images.rb'
+require_relative './classes/menu.rb'
+
 
 loop do
+    Menu::display_menu    
     system "clear"
     word = WordGenerator.new("Multi!!")
     word.generate_word

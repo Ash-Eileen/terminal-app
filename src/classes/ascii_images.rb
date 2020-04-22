@@ -1,3 +1,4 @@
+require 'colorize'
 module Images
 
     def self.title
@@ -10,21 +11,21 @@ module Images
     end
 
     def self.menu_cat
-        puts " _"                        
-        puts " \`*-."                    
-        puts "  )  _`-."                 
-        puts " .  : `. ."                
-        puts " : _   '  \ "              
-        puts " ; *` _.   `*-._ "         
-        puts " `-.-'          `-. "      
-        puts "   ;       `       `. "    
-        puts "   :.       .        \  "  
-        puts "   . \  .   :   .-'   . "  
-        puts "   '  `+.;  ;  '      : "  
-        puts "   :  '  |    ;       ;-. "
-        puts "     ; '   : :`-:     _.`* ;"
-        puts "  .*' /  .*' ; .*`- +'  `*'" 
-        puts " `*-*   `*-*  `*-*'"        
+" _                     
+ \\`*-.                  
+  )  _`-.                 
+ .  : `. .               
+ : _   '  \\           
+ ; *` _.   `*-._        
+ `-.-'          `-.      
+   ;       `       `.    
+   :.       .        \\    
+   . \\  .   :   .-'   .   
+   '  `+.;  ;  '      :  
+   :  '  |    ;       ;-. 
+     ; '   : :`-:     _.`* ;
+  .*' /  .*' ; .*`- +'  `*' 
+ `*-*   `*-*  `*-*'"        
     end
 
     def self.game_won_cat
@@ -52,11 +53,18 @@ module Images
     end
 
     def self.game_lost_cat
-
-        
-
+        puts "    '.-----/`."
+        puts "    /       '/"
+        puts "    __'`__ .''-."
+        puts "    \\o) o/      \\"
+        puts"    (`Y   .)     \\"
+        puts "      `--|__7     \\"
+        puts "        /         |"
+        puts "  __   /         /"
+        puts "  \\ )  \\        //"
+        puts "   \\ \\--X   Y  //"
+        puts "  (-`.`--_.-' /_)"
+        puts "      `-.__.-'"
     end
 
 end
-cat = Images::game_won_cat
-puts cat
