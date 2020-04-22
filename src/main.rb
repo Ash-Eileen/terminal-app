@@ -5,7 +5,7 @@ require 'colorize'
 require_relative './classes/hangman_image.rb'
 require_relative './classes/word_generator.rb'
 require_relative './classes/guess_checker.rb'
-
+require_relative './classes/ascii_images.rb'
 
 
 puts "██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗".colorize(:light_green)

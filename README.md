@@ -59,13 +59,19 @@ On day one I came to my educators with four ideas. I was leaning towards Hangman
 ![Trello Board](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/trello-board.PNG)
 
 ------
+
 ## Resources
 
 Utilised the following links for ASCII art:
 
-- http://patorjk.com/software/taag/#p=testall&f=Tubular&t=Hangman
+- <http://patorjk.com/software/taag/#p=testall&f=Tubular&t=Hangman>
+
+- <http://www.ascii-art.de/ascii/c/cat.txt>
+
+- <http://www.asciiworld.com/-Cats-.html>
 
 ------
+
 ## **Author**
 
 Ashley Smith
