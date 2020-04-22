@@ -13,24 +13,22 @@ Screens::welcome_screen
 sleep 2
 
 loop do
-    
+
     system "clear"
     
+    mode = ARGV
     if ARGV.length == 0
         selection = Menu::display_menu 
     end
+    word = WordGenerator.new
 
-    if selection == "Single-player" || ARGV.join == "single"
-        WORD = WordGenerator.new(1)
-    elsif selection == "Multi-player" || ARGV.join == "multi"
-        WORD = WordGenerator.new("multi")
-    else
-        system "clear"
-        exit
+    if mode.to_s == "single" || selection == "Single-player"
+        word.generate_word(1)
+    elsif mode.to_s == "multi" || selection == "Multi-player"
+        word.generate_word("multi")
     end
 
-    WORD.generate_word
-    guess = GuessChecker.new(WORD.word)
+    guess = GuessChecker.new(word.word)
     guess.create_hidden_word
     hangman = Hangman.new
     system "clear"

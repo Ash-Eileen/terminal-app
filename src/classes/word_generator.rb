@@ -2,14 +2,13 @@ class WordGenerator
 
     attr_accessor :number_of_players, :word, :name
 
-    def initialize(number_of_players)
-        @number_of_players = number_of_players
+    def initialize
         @word = String.new
         @name = "Player 1"
     end
 
-    def generate_word
-        if @number_of_players == 1
+    def generate_word(number_of_players)
+        if number_of_players == 1
             system "clear"
             puts "Welcome!\nWhat is your name?"
             @name = gets.strip
