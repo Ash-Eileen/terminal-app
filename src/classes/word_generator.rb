@@ -16,8 +16,7 @@ class WordGenerator
         else
             begin
                 system "clear"
-                puts "Hello Player 1!"
-                puts "Please enter a word:"
+                puts "Hello Player 1!\nPlease enter a word:"
                 @word = STDIN.gets.upcase.strip
                 puts "You have selected '#{word}'."
                 puts Images::menu_cat.colorize(:cyan)

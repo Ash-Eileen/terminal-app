@@ -9,16 +9,12 @@ module Screens
 
     def self.welcome_screen
         system "clear"
+        print "\n\n                         "
         typing("Welcome to...")
-        puts "\n\n"
+        puts "\n\n\n"
         sleep 0.5
-        puts "██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗".colorize(:light_green)
-        puts "██║  ██║██╔══██╗████╗  ██║██╔════╝ ████╗ ████║██╔══██╗████╗  ██║".colorize(:light_red)
-        puts "███████║███████║██╔██╗ ██║██║  ███╗██╔████╔██║███████║██╔██╗ ██║".colorize(:cyan)
-        puts "██╔══██║██╔══██║██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══██║██║╚██╗██║".colorize(:light_magenta)
-        puts "██║  ██║██║  ██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║ ╚████║".colorize(:light_blue)
-        puts "╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝".colorize(:light_yellow)     
-        puts "\n"
+        Images::title
+        print "\n\n                         "
         sleep 0.5
         typing("...with cats?")
         puts "\n"

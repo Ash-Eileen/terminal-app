@@ -32,6 +32,7 @@ loop do
     elsif mode.to_s == "multi" || selection == "Multi-player"
         word.generate_word("multi")
     else
+        system "clear"
         exit
     end
 
@@ -61,4 +62,5 @@ loop do
     end
 
     exit if response == "n"
+
 end
