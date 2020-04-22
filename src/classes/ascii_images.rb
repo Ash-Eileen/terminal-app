@@ -51,6 +51,11 @@ module Images
         puts '              """.$.$.$.$.....$.$.""""               ""..$..$."..$..$."'
     end
 
+    def self.game_lost_cat
+
+        
+
+    end
 
 end
 cat = Images::game_won_cat

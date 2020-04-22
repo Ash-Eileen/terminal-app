@@ -1,6 +1,6 @@
 class GuessChecker
 
-    attr_accessor :hidden_word, :guessing_word, :guess, :attempts, :won
+    attr_accessor :hidden_word, :guessing_word, :guess, :attempts, :won, :lost
 
     def initialize(guessing_word)
         @guessing_word = guessing_word.split("")
@@ -8,6 +8,7 @@ class GuessChecker
         @guess = String.new
         @attempts = Array.new
         @won = false
+        @lost = false
     end
 
     def create_hidden_word
@@ -41,7 +42,8 @@ class GuessChecker
             @won = true
         elsif @guessing_word.include?(@guess)
             index = 0
-            @guessing_word.map { |character| @hidden_word[index] = @guess if @guess == character
+            @guessing_word.map { |character| 
+                @hidden_word[index] = @guess if @guess == character
                 index += 1
             }
             puts @hidden_word.join(" ")
@@ -53,7 +55,15 @@ class GuessChecker
         else
             @attempts.push(@guess)
             hangman.guesses += 1
-            puts "Wrong"
+            if hangman.guesses == 9
+                system "clear"
+                puts hangman.draw_hangman
+                puts "Oh no...The hangman is out of time...the word was #{@guessing_word.join}"    
+                @lost = true
+                sleep 2
+            else
+                puts "Wrong"
+            end
             sleep 1
         end
     end
