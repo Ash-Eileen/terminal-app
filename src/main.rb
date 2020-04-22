@@ -11,21 +11,24 @@ require_relative './classes/screen_transitions.rb'
 
 Screens::welcome_screen
 sleep 2
+mode = ARGV[0]
 
 loop do
 
     system "clear"
     
-    mode = ARGV
     if ARGV.length == 0
         selection = Menu::display_menu 
     end
+    
     word = WordGenerator.new
 
     if mode.to_s == "single" || selection == "Single-player"
         word.generate_word(1)
     elsif mode.to_s == "multi" || selection == "Multi-player"
         word.generate_word("multi")
+    else
+        exit
     end
 
     guess = GuessChecker.new(word.word)
@@ -47,12 +50,11 @@ loop do
     end
 
     puts "Play again? (y or n)"
-    response = gets.strip
+    response = STDIN.gets.strip
     until response == "y" || response == "n"
         puts "Invalid selection.\nPlay again? (y or n)"
-        response = gets.strip
+        response = STDIN.gets.strip
     end
 
     exit if response == "n"
-    
 end

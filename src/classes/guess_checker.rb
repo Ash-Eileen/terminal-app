@@ -17,11 +17,11 @@ class GuessChecker
 
     def get_guess
         puts "Please guess a letter or word"
-        @guess = gets.upcase.strip
+        @guess = STDIN.gets.upcase.strip
         until !@attempts.include?(@guess) && !@hidden_word.include?(@guess)
             puts "You've tried that before...try again..."
             puts "Please guess a letter or word"
-            @guess = gets.upcase.strip
+            @guess = STDIN.gets.upcase.strip
         end
         raise ArgumentError, "Word has special characters or numbers" if @guess.scan(/[^a-zA-Z]/).length != 0 || @guess.length == 0
     rescue

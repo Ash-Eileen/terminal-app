@@ -8,7 +8,7 @@ Hangman is designed for entertainment purposes. If you're bored and need somethi
 
 #### **What Hangman will do**
 
-There will be three executable files - one to launch single-player mode, one to launch multi-player mode and one with both options included. In single-player mode the app will ask the user for their name and then will generate a random word for them to guess. The user will be able to input single letter guesses and also full words. This will continue until the full hangman picture has generated or the word has been guessed. Multi-player mode will work in the same way, however, names will not be asked in this mode as the number of users is not limited. On game over whether won or lost there will be ASCII art generated of a cat. Which art is generated will depend on the outcome. There will then be the option to play again or exit.
+There will be three executable files - one to launch single-player mode, one to launch multi-player mode and one with both options included. In single-player mode the app will advise the player that a random wordhas been generated for them to guess. The user will be able to input single letter guesses and also full words. This will continue until the full hangman picture has generated or the word has been guessed. Multi-player mode will work in the same way, however, firstly it will ask Player 1 to enter a word to be guessed. On game over whether won or lost there will be ASCII art generated of a cat. Which art is generated will depend on the outcome. There will then be the option to play again or exit.
 
 #### **Target Audience**
 
