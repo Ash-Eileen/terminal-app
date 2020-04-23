@@ -1,14 +1,10 @@
 #!/bin/bash
 
+clear
+
 echo "Welcome to Hangman"
 
-echo "Lets begin the install now"
-
-git clone "https://github.com/Ash-Eileen/terminal-app.git"
-
-cd terminal-app/src
-
-echo "Time to ensure all required gems are installed"
+echo "Ensuring all required gems are installed"
 
 bundle install
 
