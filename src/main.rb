@@ -22,7 +22,7 @@ loop do
     system "clear"
     
     if ARGV.length == 0
-        selection = CURSOR.invisible {Menu::display_menu}
+        selection = CURSOR.invisible {Screens::display_menu}
     end
     
     word = WordGenerator.new
@@ -40,6 +40,7 @@ loop do
     guess.create_hidden_word
     hangman = Hangman.new
     system "clear"
+
     until guess.lost || guess.won
         puts Images::small_cat.colorize(:light_red)
         hangman.draw_hangman

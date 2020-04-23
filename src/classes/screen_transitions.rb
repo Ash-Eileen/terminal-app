@@ -21,6 +21,15 @@ module Screens
 
     end
 
+    def self.display_menu
+        menu_options = %w(Single-player Multi-player Exit)
+        prompt = TTY::Prompt.new
+        puts "\n\n"
+        Images::title
+        puts Images::menu_cat.colorize(:magenta)
+        selection = prompt.select("What would you like to do?", menu_options)
+    end
+
     def self.win
         puts Images::game_won_cat.colorize(:magenta)
         puts "You're a winner baby!"
