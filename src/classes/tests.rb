@@ -1,5 +1,3 @@
-# Testing file to ensure that independent classes are behaving as expected.
-
 require 'test/unit'
 require 'random_word_generator'
 require 'tty-prompt'

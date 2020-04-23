@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class GuessChecker
   attr_accessor :hidden_word, :guessing_word, :guess, :attempts, :won, :lost
 

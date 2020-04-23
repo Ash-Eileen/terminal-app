@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Hangman
   attr_accessor :guesses, :hangman
 

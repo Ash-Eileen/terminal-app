@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Screens
   def self.typing(word)
     word.each_char do |character|

@@ -14,6 +14,8 @@ require_relative './classes/screen_transitions.rb'
 CURSOR = TTY::Cursor
 mode = ARGV[0]
 
+Launchy.open("https://www.youtube.com/watch?v=g7k1IxKPdqw&t=18s")
+
 CURSOR.invisible do
   Screens.welcome_screen
   sleep 2

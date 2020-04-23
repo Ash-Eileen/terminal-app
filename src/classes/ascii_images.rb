@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Images
   def self.title
     puts '        ██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗'.colorize(:light_green)
