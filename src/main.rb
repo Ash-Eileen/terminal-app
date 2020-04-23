@@ -1,3 +1,5 @@
+# Main game function - calls all classes and all required gems to run the game
+
 require 'random_word_generator'
 require 'tty-prompt'
 require 'colorize'

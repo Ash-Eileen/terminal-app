@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WordGenerator
   attr_accessor :number_of_players, :word
   def initialize

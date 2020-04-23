@@ -42,7 +42,7 @@ class GuessChecker
       win
     elsif @guessing_word.include?(@guess)
       index = 0
-      @guessing_word.map do |character| 
+      @guessing_word.map do |character|
         @hidden_word[index] = @guess if @guess == character
         index += 1
       end

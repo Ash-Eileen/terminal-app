@@ -1,3 +1,5 @@
+# Testing file to ensure that independent classes are behaving as expected.
+
 require 'test/unit'
 require 'random_word_generator'
 require 'tty-prompt'
@@ -10,40 +12,39 @@ require_relative 'guess_checker.rb'
 require_relative 'ascii_images.rb'
 require_relative 'screen_transitions.rb'
 
-
 CURSOR = TTY::Cursor
 WORD = WordGenerator.new
 
 class MultiPlayerTest < Test::Unit::TestCase
   def test_multi_player_hidden_word_hello
     word = WordGenerator.new
-    word.word = "HELLO"
+    word.word = 'HELLO'
     guess = GuessChecker.new(word.word)
     guess.create_hidden_word
-    assert_equal ["_","_","_","_","_"], guess.hidden_word
+    assert_equal %w[_ _ _ _ _], guess.hidden_word
   end
 
   def test_multi_player_hidden_word_xylophone
     word = WordGenerator.new
-    word.word = "XYLOPHONE"
+    word.word = 'XYLOPHONE'
     guess = GuessChecker.new(word.word)
     guess.create_hidden_word
-    assert_equal ["_","_","_","_","_","_","_","_","_"], guess.hidden_word
+    assert_equal %w[_ _ _ _ _ _ _ _ _], guess.hidden_word
   end
 
   def test_guess_equals_word
     word = WordGenerator.new
-    word.word = "HELLO"
+    word.word = 'HELLO'
     guess = GuessChecker.new(word.word)
-    guess.guess = "HELLO"
+    guess.guess = 'HELLO'
     assert_equal guess.guess, word.word
   end
 
   def test_guess__does_not_equal_word
     word = WordGenerator.new
-    word.word = "HELLO"
+    word.word = 'HELLO'
     guess = GuessChecker.new(word.word)
-    guess.guess = "nope"
+    guess.guess = 'nope'
     assert_not_equal guess.guess, word.word
   end
 end
