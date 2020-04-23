@@ -1,74 +1,75 @@
-class Hangman
+# frozen_string_literal: true
 
-    attr_accessor :guesses, :hangman
-    
-    def initialize
-        @guesses = 0
-        @HANGMAN = [
-"  
-    
-    
-    
-    
+class Hangman
+  attr_accessor :guesses, :hangman
+
+  def initialize
+    @guesses = 0
+    @hangman = [
+      "
+
+
+
+
  ",
-"  
-    
-    
-    
-    
+      "
+
+
+
+
   --------",
-"  
-        |
-        |
-        |
-        |
-  --------",
-"    _____
+      "
         |
         |
         |
         |
   --------",
-"    _____
+      "    _____
+        |
+        |
+        |
+        |
+  --------",
+      "    _____
      |  |
      o  |
         |
-        | 
+        |
   --------",
-"    _____
+      "    _____
      |  |
      o  |
      |  |
         |
   --------",
-"    _____
+      "    _____
      |  |
      o  |
     /|  |
         |
   --------",
-"    _____
+      "    _____
      |  |
      o  |
     /|\\ |
         |
   --------",
-"    _____
+      "    _____
      |  |
      o  |
     /|\\ |
     /   |
   --------",
-"    _____
+      "    _____
      |  |
      o  |
     /|\\ |
     / \\ |
-  --------"]
-    end
+  --------"
+    ]
+  end
 
-    def draw_hangman
-        puts @HANGMAN[@guesses]
-    end
-
+  def draw_hangman
+    puts @hangman[@guesses]
+  end
 end
