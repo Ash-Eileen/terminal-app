@@ -3,7 +3,7 @@ module Screens
     def self.typing(word)
         word.each_char {|character|
             print character
-            sleep (0.08)
+            sleep (0.07)
         }
     end
 

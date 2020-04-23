@@ -1,10 +1,9 @@
 class Hangman
 
-    attr_accessor :guesses, :hangman, :lost
+    attr_accessor :guesses, :hangman
     
     def initialize
         @guesses = 0
-        @lost = false
         @HANGMAN = [
 "  
     

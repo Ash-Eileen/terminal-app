@@ -1,4 +1,3 @@
-require 'colorize'
 module Images
 
     def self.title

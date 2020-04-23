@@ -3,11 +3,10 @@ require 'tty-prompt'
 require 'colorize'
 require 'tty-cursor'
 
-require_relative './classes/hangman_image.rb'
+require_relative './classes/hangman.rb'
 require_relative './classes/word_generator.rb'
 require_relative './classes/guess_checker.rb'
 require_relative './classes/ascii_images.rb'
-require_relative './classes/menu.rb'
 require_relative './classes/screen_transitions.rb'
 
 CURSOR = TTY::Cursor

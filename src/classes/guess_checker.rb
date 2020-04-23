@@ -19,7 +19,7 @@ class GuessChecker
         puts "Please guess a letter or word"
         @guess = STDIN.gets.upcase.strip
         until !@attempts.include?(@guess) && !@hidden_word.include?(@guess)
-            puts "You've tried that before...try again..."
+            puts "\nYou've tried that before...try again..."
             puts "Please guess a letter or word"
             @guess = STDIN.gets.upcase.strip
         end
@@ -32,14 +32,11 @@ class GuessChecker
     def display_hidden_and_attempts
         puts "You have guessed: #{@attempts}"
         puts @hidden_word.join(" ")
-        
     end
 
     def check_guess(hangman)
         if @guess == @guessing_word.join
-            puts "Wow you won! Amazing!"
-            sleep 1
-            @won = true
+            win
         elsif @guessing_word.include?(@guess)
             index = 0
             @guessing_word.map { |character| 
@@ -48,9 +45,7 @@ class GuessChecker
             }
             puts @hidden_word.join(" ")
             if @hidden_word == @guessing_word
-                puts "Wow you won! Amazing"
-                sleep 1
-                @won = true
+                win
             end
         else
             @attempts.push(@guess)
@@ -66,6 +61,12 @@ class GuessChecker
             end
             sleep 1
         end
+    end
+
+    def win
+        puts "Wow you won! Amazing"
+        sleep 1
+        @won = true
     end
 
 end
