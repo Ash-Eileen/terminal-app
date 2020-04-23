@@ -10,31 +10,52 @@ require_relative 'guess_checker.rb'
 require_relative 'ascii_images.rb'
 require_relative 'screen_transitions.rb'
 
-WORD = WordGenerator.new
+
 CURSOR = TTY::Cursor
+WORD = WordGenerator.new
 
-class MultiWordGeneratorTest < Test::Unit::TestCase
-  def test_multi_player_hello
-    WORD.generate_word('multi')
-    assert_equal "HELLO", WORD.word
-  end
-
-  def test_hidden_word_works_multi_hello
-    WORD.generate_word('multi')
-    guess = GuessChecker.new(WORD.word)
+class MultiPlayerTest < Test::Unit::TestCase
+  def test_multi_player_hidden_word_hello
+    word = WordGenerator.new
+    word.word = "HELLO"
+    guess = GuessChecker.new(word.word)
     guess.create_hidden_word
     assert_equal ["_","_","_","_","_"], guess.hidden_word
   end
 
-  def test_multi_player_xylophone
-    WORD.generate_word('multi')
-    assert_equal "XYLOPHONE", WORD.word
-  end
-
-  def test_hidden_word_works_multi_hello
-    WORD.generate_word('multi')
-    guess = GuessChecker.new(WORD.word)
+  def test_multi_player_hidden_word_xylophone
+    word = WordGenerator.new
+    word.word = "XYLOPHONE"
+    guess = GuessChecker.new(word.word)
     guess.create_hidden_word
     assert_equal ["_","_","_","_","_","_","_","_","_"], guess.hidden_word
+  end
+
+  def test_guess_equals_word
+    word = WordGenerator.new
+    word.word = "HELLO"
+    guess = GuessChecker.new(word.word)
+    guess.guess = "HELLO"
+    assert_equal guess.guess, word.word
+  end
+
+  def test_guess__does_not_equal_word
+    word = WordGenerator.new
+    word.word = "HELLO"
+    guess = GuessChecker.new(word.word)
+    guess.guess = "nope"
+    assert_not_equal guess.guess, word.word
+  end
+end
+
+class SinglePlayerTest < Test::Unit::TestCase
+  def test_word_is_a_string
+    WORD.generate_word(1)
+    assert WORD.word.is_a? String
+  end
+
+  def test_word_is_only_letters
+    WORD.generate_word(1)
+    assert WORD.word.scan(/[^a-zA-Z]/).empty?
   end
 end
