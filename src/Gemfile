@@ -14,4 +14,4 @@ gem 'colorize', '~> 0.8.1'
 
 gem 'tty-cursor', '~> 0.7.1'
 
-gem "test-unit", "~> 3.3"
+gem 'test-unit', '~> 3.3'
