@@ -8,7 +8,7 @@ class WordGenerator
   def generate_word(number_of_players)
     if number_of_players == 1
       system 'clear'
-      puts "Hello Gamer. Let's play hangman. \nA word has been randomly generated for you to guess."
+      Screens.typing "Hello Gamer. Let's play hangman.\n\nA word has been randomly generated for you to guess."
       puts Images.menu_cat.colorize(:light_blue)
       @word = RandomWordGenerator.word.upcase
       sleep 2
