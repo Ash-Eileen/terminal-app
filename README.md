@@ -14,6 +14,15 @@
 - [Installation Instructions](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
 - [Resources](https://github.com/Ash-Eileen/terminal-app#resources)
 
+------
+
+## Related Documents
+
+- [Help File](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/help.md)
+- [Development Log](https://github.com/Ash-Eileen/terminal-app/blob/master/development-log.md)
+
+------
+
 ## **Software Development Plan**
 
 ### **Statement of Purpose and Scope**
