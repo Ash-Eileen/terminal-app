@@ -60,6 +60,40 @@ On day one I came to my educators with four ideas. I was leaning towards Hangman
 
 ------
 
+## **Installation Instructions**
+
+1. If you do not have Ruby installed on your computer please go to this [page](https://www.ruby-lang.org/en/documentation/installation/) and follow the installation instructions.
+
+2. If you do not have bundler installed on your computer please run the following command line instruction to install this gem:
+
+   `install bundler`
+
+3. Clone the files from this repository by using the following command line instruction:
+
+   `git clone https://github.com/Ash-Eileen/terminal-app.git`
+
+4. From here please navigate to the src folder from where you have cloned the repository:
+
+   `cd src`
+
+5. There are three executable files you can choose to run from here which will install all required gems. These files include the command line arguments required to enter each game mode. 
+
+   - For the full game with menu and options to play either single or multi-player mode please run:
+
+     `./run_app_with_menu.sh`
+
+   - For single-player mode only please run:
+
+     `./run_app_single_player.sh`
+
+   - For multi-player mode only please run:
+
+     `./run_app_multi_player.sh`
+
+6. Please enjoy the game!
+
+------
+
 ## Resources
 
 Utilised the following links for ASCII art:
