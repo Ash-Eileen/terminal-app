@@ -1,5 +1,15 @@
 # **Welcome to Hangman! 👋**
 
+## Table of Contents
+
+- ![Software Development Plan](https://github.com/Ash-Eileen/terminal-app#software-development-plan)
+- ![Features](https://github.com/Ash-Eileen/terminal-app#features)
+- ![User Interaction and Experience](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
+- ![Control Flow Diagram](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
+- ![Implementation Plan](https://github.com/Ash-Eileen/terminal-app#implementation-plan)
+- ![Installation Instructions](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
+- ![Resources](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
+
 ## **Software Development Plan**
 
 ### **Statement of Purpose and Scope**
@@ -8,7 +18,7 @@ Hangman is designed for entertainment purposes. If you're bored and need somethi
 
 #### **What Hangman will do**
 
-There will be three executable files - one to launch single-player mode, one to launch multi-player mode and one with both options included. In single-player mode the app will advise the player that a random word has been generated for them to guess. The user will be able to input single letter guesses and also full words. This will continue until the full hangman picture has generated or the word has been guessed. Multi-player mode will work in the same way, however, firstly it will ask Player 1 to enter a word to be guessed. On game over whether won or lost there will be ASCII art generated of a cat. Which art is generated will depend on the outcome. There will then be the option to play again or exit. Any input by the user will be checked to ensure it doesn't include any special characters or numbers, this will include both the word to be guessed and any guesses entered. A message will be displayed if the input does not match these requirements and the user will be asked to re-enter the input correctly.
+There will be three executable files - one to launch single-player mode, one to launch multi-player mode and one with both options included. In single-player mode the app will advise the player that a random word has been generated for them to guess. The user will be able to input single letter guesses and full words. This will continue until the full hangman picture has generated or the word has been guessed. Multi-player mode will work in the same way, however, firstly it will ask Player 1 to enter a word to be guessed. On game over whether won or lost there will be ASCII art generated of a cat. Which art is generated will depend on the outcome. There will then be the option to play again or exit. Any input by the user will be checked to ensure it doesn't include any special characters or numbers, this will include both the word to be guessed and any guesses entered. A message will be displayed if the input does not match these requirements and the user will be asked to re-enter the input correctly.
 
 #### **Target Audience**
 
@@ -28,11 +38,11 @@ Hangman provides the option for a single player mode with a randomly generated w
 
 #### **Multi-player Mode In Which One Player Can Enter a Word for Others to Guess**
 
-The game alsos include a multi-player mode. This game mode is for 2+ players. There is no limit on the number of users for this mode. In this mode an instruction screen is displayed advising that one person will enter a word for the others to guess and thes the other users are prompted to look away from the screen so the first player can enter a word. This input is then checked using error handling to ensure that it is a string with no special characters or numbers. If the word meets these requirements it is then be stored and a string is displayed with underscores replacing each letter to represent the word. The other players will then be able to guess letters and the word.
+The game also include a multi-player mode. This game mode is for 2+ players. There is no limit on the number of users for this mode. In this mode an instruction screen is displayed advising that one person will enter a word for the others to guess and the other users are prompted to look away from the screen so the first player can enter a word. This input is then checked using error handling to ensure that it is a string with no special characters or numbers. If the word meets these requirements it is then be stored and a string is displayed with underscores replacing each letter to represent the word. The other players will then be able to guess letters and the word.
 
 #### **User Interface and User Experience**
 
-To try and make the terminal app more visually pleasing I have used used a few different methods. For transition screens such as the welcome screen and also for the screen displaying instructions or message I have utilised a method to mimic the appearance of typing across the screen. I am also using colorize to break up the screen with coloured ASCII art and to display my customised hangman title. The ASCII art I've chosen to go with is cats because I'm a big cat lover. I think this makes the game a bit more fun for users to see the theme of cats throughout the game.
+To try and make the terminal app more visually pleasing I have used a few different methods. For transition screens such as the welcome screen and also for the screen displaying instructions or message, I have utilised a method to mimic the appearance of typing across the screen. I am also using colorize to break up the screen with coloured ASCII art and to display my customised hangman title. The ASCII art I've chosen to go with is cats because I'm a big cat lover. I think this makes the game a bit more fun for users to see the theme of cats throughout the game.
 
 ------
 
@@ -68,7 +78,7 @@ If the user runs out of guesses they will see the loss screen.
 
 ![Loss Screen](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/loss.png)
 
-At this point the user will have the opportunity to exit or play again. If they choose to play again they will either be taken the menu screen if they launched the the file launched including both single-player and multi-player the menu will then be displayed or they will be taken the respective multi-player or single-player screen as described above.
+At this point the user will have the opportunity to exit or play again. If they choose to play again they will either be taken the menu screen if they launched the file launched including both single-player and multi-player the menu will then be displayed or they will be taken the respective multi-player or single-player screen as described above.
 
 This will continue until the user elects to exit the game.
 
@@ -94,9 +104,9 @@ On day one I came to my educators with four ideas. I was leaning towards Hangman
 
 ## **Installation Instructions**
 
-1. If you do not have Ruby installed on your computer please go to this [page](https://www.ruby-lang.org/en/documentation/installation/) and follow the installation instructions.
+1. If you do not have Ruby installed on your computer, please go to this [page](https://www.ruby-lang.org/en/documentation/installation/) and follow the installation instructions.
 
-2. If you do not have bundler installed on your computer please run the following command line instruction to install this gem:
+2. If you do not have bundler installed on your computer, please run the following command line instruction to install this gem:
 
    `install bundler`
 

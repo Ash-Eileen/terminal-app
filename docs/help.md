@@ -2,9 +2,9 @@
 
 # **Installation Instructions**
 
-1. If you do not have Ruby installed on your computer please go to this [page](https://www.ruby-lang.org/en/documentation/installation/) and follow the installation instructions.
+1. If you do not have Ruby installed on your computer, please go to this [page](https://www.ruby-lang.org/en/documentation/installation/) and follow the installation instructions.
 
-2. If you do not have bundler installed on your computer please run the following command line instruction to install this gem:
+2. If you do not have bundler installed on your computer, please run the following command line instruction to install this gem:
 
    `gem install bundler`
 
