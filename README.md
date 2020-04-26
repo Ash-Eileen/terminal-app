@@ -104,6 +104,34 @@ On day one I came to my educators with four ideas. I was leaning towards Hangman
 
 ------
 
+## **Testing**
+
+For the creation of this application I used a mix of manual testing and tests that were designed using [test-unit](https://github.com/test-unit/test-unit). The tests that I designed are included in the [test.rb](https://github.com/Ash-Eileen/terminal-app/blob/master/src/classes/tests.rb) file with comments advising of their purpose. These tests were focussed primarily around ensuring that the word generation and guessing worked correctly. The below table provides an outline of the manual tests done.
+
+| Feature                                                      | Expected Outcome                                             | Actual Outcome                                               | Any remaining issues?                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Single-Player Mode Generates a Random Word**               | A random word is generated using the random-word-generator gem | As expected                                                  | Nil                                                          |
+| **Multi-Player Mode Requests a Word**                        | User is prompted to enter a word. If the word contains special characters or numbers then the a message is displayed advising the user to retry their entry. This continues until entry is valid. | As expected                                                  | Nil                                                          |
+| **Hidden Word is Generated with Underscores in Place of Letters** | Word length matches the word to be guessed. All characters are replaced with underscores and spaces between letters are easily identified | As expected                                                  | Nil                                                          |
+| **Guesses Update the Attempts and Hidden Word**              | When a letter is guessed correctly the letter is added to the hidden word and replaces the underscore. Incorrect guesses are added to the attempts array. | As expected                                                  | Nil                                                          |
+| **Guesses Cannot be Repeated or Special Characters, Numbers** | When a guess is repeated or does not fulfil the requirements of being a letter or word a message is displayed advising the entry is invalid and the user is prompted to retry. No guesses are used for this. | As expected                                                  | Nil                                                          |
+| **If Word is Guessed Correctly then Player Wins**            | If user enters full word correctly or the letters are populated correctly individually then the player wins the game. | As expected                                                  | Nil                                                          |
+| **If the Player Runs Out of Guesses the Player Loses**       | When guesses run out a message is displayed showing the word that they were guessing and then the player loses the game. | As expected                                                  | Nil                                                          |
+| **Welcome Screen Displays Correctly**                        | Text outside of hangman title has scrolling appearance. Welcome screen is displayed briefly before displaying next screen. | User can type during this process and it displays to screen, otherwise as expected | This is slightly frustrating but doesn't impact function. Utilising tty-cursor to hide cursor so user is less tempted to type. |
+| **Menu Screen Displays Correctly and Takes User Input Correctly** | The menu displays properly with title and cat. The tty-prompt gem functions correctly and user input results in the correct option being selected. | Arrows don't display on Ubuntu, otherwise functions as expected | This is slightly frustrating but doesn't impact function of menu so no plans to change. |
+| **Instructions are Displayed for Single and Multi-Player**   | Screen transition occurs showing instructions that mimic typing. | User can type during this process and it displays to screen, otherwise as expected | This is slightly frustrating but doesn't impact function. Utilising tty-cursor to hide cursor so user is less tempted to type. |
+| **Win and Loss Screens Generate Correctly**                  | On win the win cat is displayed and on loss the loss cat is displayed. | As expected                                                  | Nil                                                          |
+| **User can Exit from Win and Loss screen**                   | Entering 'n' will allow the player to exit.                  | As expected                                                  | Nil                                                          |
+| **User can Restart Loop from Win and Loss Screen**           | Entering 'y' will allow the player to exit.                  | As expected                                                  | Nil                                                          |
+| **Only 'y' or 'n' Are Valid Inputs on Win and Loss Screen**  | Entering any other characters will prompt a message requesting the correct input. Will only continue to next step on 'y' or 'n'. | As expected                                                  | Nil                                                          |
+| **Hangman Displays Correctly Depending on Guess Number**     | The hangman will generate from the array dependant on how many guesses have been tried and will display the correct hangman picture. | As expected                                                  | Nil                                                          |
+| **ASCII Art Displays Correctly**                             | On all pages with ASCII art the image will display properly. | As expected                                                  | Nil                                                          |
+| **Colorize Gem Will Display Colours Correctly**              | Whenever using colorize the string will generate with a colour. | As expected                                                  | Nil                                                          |
+
+
+
+------
+
 ## **Installation Instructions**
 
 Please note: this information is included in the help.md file in the docs folder [here](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/help.md).
