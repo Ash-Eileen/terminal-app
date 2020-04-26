@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [Software Development Plan](https://github.com/Ash-Eileen/terminal-app#software-development-plan)
+- [Statement of Purpose and Scope](https://github.com/Ash-Eileen/terminal-app#statement-of-purpose-and-scope)
 - [Features](https://github.com/Ash-Eileen/terminal-app#features)
 - [User Interaction and Experience](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
 - [Control Flow Diagram](https://github.com/Ash-Eileen/terminal-app#control-flow-diagram)
