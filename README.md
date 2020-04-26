@@ -107,7 +107,7 @@ On day one I came to my educators with four ideas. I was leaning towards Hangman
 
 ## **Testing**
 
-For the creation of this application I used a mix of manual testing and tests that were designed using [test-unit](https://github.com/test-unit/test-unit). The tests that I designed are included in the [test.rb](https://github.com/Ash-Eileen/terminal-app/blob/master/src/classes/tests.rb) file with comments advising of their purpose. These tests were focussed primarily around ensuring that the word generation and guessing worked correctly. The below table provides an outline of the manual tests done.
+For the creation of this application I used a mix of manual testing and tests that were designed using [test-unit](https://github.com/test-unit/test-unit). The tests that I designed are included in the [test.rb](https://github.com/Ash-Eileen/terminal-app/blob/master/src/classes/tests.rb) file with comments advising of their purpose. These tests were focussed primarily around ensuring that the word generation and guessing worked correctly. Test were carried out by myself, my partner and family. Fellow classmates also tried the executable files to ensure these worked correctly and ran tests from the below table. The below table provides an outline of the manual tests done.
 
 | Feature                                                      | Expected Outcome                                             | Actual Outcome                                               | Any remaining issues?                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -128,6 +128,8 @@ For the creation of this application I used a mix of manual testing and tests th
 | **Hangman Displays Correctly Depending on Guess Number**     | The hangman will generate from the array dependant on how many guesses have been tried and will display the correct hangman picture. | As expected                                                  | Nil                                                          |
 | **ASCII Art Displays Correctly**                             | On all pages with ASCII art the image will display properly. | As expected                                                  | Nil                                                          |
 | **Colorize Gem Will Display Colours Correctly**              | Whenever using colorize the string will generate with a colour. | As expected                                                  | Nil                                                          |
+| **Command Line Arguments Load Correct Game Mode**            | With no command line argument the full game will launch including the menu. If "single" is entered as a command line argument the welcome screen will load and then proceed to the single-player mode. If "multi" is entered the welcome screen will load and then proceed to multi-player mode. On game end and choosing to continue the game will loop back to the correct game mode per the command line argument. | As expected                                                  | Nil                                                          |
+| **Executable Files Run Correctly**                           | All gems will be installed and correct game mode will be launched. | As expected                                                  | Nil                                                          |
 
 
 
@@ -151,7 +153,7 @@ Please note: this information is included in the help.md file in the docs folder
 
    `cd src`
 
-5. There are three executable files you can choose to run from here which will install all required gems. These files include the command line arguments required to enter each game mode. 
+5. There are three executable files you can choose to run from here which will install all required gems. These files include the command line arguments required to enter each game mode.
 
    - For the full game with menu and options to play either single or multi-player mode please run:
 
