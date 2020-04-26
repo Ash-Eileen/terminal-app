@@ -16,7 +16,7 @@ module Images
   end
 
   def self.menu_cat
-    "/n  _
+    "\n  _
   \\`*-.
    )  _`-.
   .  : `. .
