@@ -9,6 +9,7 @@
 - [User Interaction and Experience](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
 - [Control Flow Diagram](https://github.com/Ash-Eileen/terminal-app#control-flow-diagram)
 - [Implementation Plan](https://github.com/Ash-Eileen/terminal-app#implementation-plan)
+- [Testing](https://github.com/Ash-Eileen/terminal-app#testing)
 - [Installation Instructions](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
 - [Resources](https://github.com/Ash-Eileen/terminal-app#resources)
 
