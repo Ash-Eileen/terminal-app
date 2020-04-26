@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-- ![Software Development Plan](https://github.com/Ash-Eileen/terminal-app#software-development-plan)
-- ![Features](https://github.com/Ash-Eileen/terminal-app#features)
-- ![User Interaction and Experience](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
-- ![Control Flow Diagram](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
-- ![Implementation Plan](https://github.com/Ash-Eileen/terminal-app#implementation-plan)
-- ![Installation Instructions](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
-- ![Resources](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
+- [Software Development Plan](https://github.com/Ash-Eileen/terminal-app#software-development-plan)
+- [Features](https://github.com/Ash-Eileen/terminal-app#features)
+- [User Interaction and Experience](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
+- [Control Flow Diagram](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
+- [Implementation Plan](https://github.com/Ash-Eileen/terminal-app#implementation-plan)
+- [Installation Instructions](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
+- [Resources](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
 
 ## **Software Development Plan**
 
