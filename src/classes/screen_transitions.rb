@@ -3,7 +3,7 @@
 # This module also includes the method which mimics typing as it was most
 # related to the other methods in this file.
 module Screens
-  # This method takes in an argument of a string and then mimics typing 
+  # This method takes in an argument of a string and then mimics typing
   # across the screen.
   def self.typing(word)
     word.each_char do |character|
@@ -11,7 +11,7 @@ module Screens
       sleep 0.07
     end
   end
-  
+
   # Displays the welcome screen.
   def self.welcome_screen
     system 'clear'

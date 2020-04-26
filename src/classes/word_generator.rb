@@ -1,7 +1,7 @@
 # This class is designed to create the word that needs to be guessed.
 class WordGenerator
   attr_accessor :number_of_players, :word
-  
+
   # Initialises the word that needs to be guessed as a string.
   def initialize
     @word = ''
@@ -21,7 +21,7 @@ class WordGenerator
       @word = RandomWordGenerator.word.upcase
       sleep 2
     else
-      # Displays the instruction screen for multi-player mode using the 
+      # Displays the instruction screen for multi-player mode using the
       # multi_mode method.
       multi_mode
       # Enters loop to get the user to input a word to be guessed.
@@ -34,7 +34,7 @@ class WordGenerator
         puts "You have selected '#{word}'."
         puts Images.menu_cat.colorize(:cyan)
         sleep 2
-        # If the input contains any characters other than A-Z or a-z. Raises an 
+        # If the input contains any characters other than A-Z or a-z. Raises an
         # argument error if user input contains characters that are not allowed.
         if !@word.scan(/[^a-zA-Z]/).empty? || @word.empty?
           raise ArgumentError, 'Word has special characters or numbers'

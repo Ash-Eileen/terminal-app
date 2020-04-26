@@ -22,7 +22,7 @@ class GuessChecker
   end
 
   # This method checks the guess the user has entered a string with no special
-  # characters or letters and has not been tried previously. The user is prompted to 
+  # characters or letters and has not been tried previously. The user is prompted to
   # retry their entry until it is valid. The method then returns the guess.
   def user_guess
     puts 'Please guess a letter or word'
@@ -34,7 +34,7 @@ class GuessChecker
       puts 'Please guess a letter or word'
       @guess = STDIN.gets.upcase.strip
     end
-    # Checks the input does not contain any characters other than A-Z or a-z. Raises an 
+    # Checks the input does not contain any characters other than A-Z or a-z. Raises an
     # argument error if user input contains characters that are not allowed.
     if !@guess.scan(/[^a-zA-Z]/).empty? || @guess.empty?
       raise ArgumentError, 'Word has special characters or numbers'
@@ -53,7 +53,7 @@ class GuessChecker
 
   # Checks the guess entered against the word to be guessed. Takes in the argument of the hangman
   # so that it can check how many guesses have been tried. Returns the updated attempts and hidden
-  # word displaying any correct letters. If the hangman image has been completed it will return 
+  # word displaying any correct letters. If the hangman image has been completed it will return
   # won or lost to end this playthrough. If the game is lost the word that the user was trying
   # to guess.
   def check_guess(hangman)

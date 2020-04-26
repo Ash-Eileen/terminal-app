@@ -1,5 +1,4 @@
 # This module contains all of the ASCII images utilised through the hangman application.
-
 module Images
   # Displays the Hangman logo to screen with the selected colours.
   def self.title

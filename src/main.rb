@@ -29,7 +29,7 @@ loop do
   selection = CURSOR.invisible { Screens.display_menu } if ARGV.empty?
 
   # Initialises the WordGenerator class so that a word can be either
-  # randomly created in single-player mode or can be entered by 
+  # randomly created in single-player mode or can be entered by
   # a user in multi-player mode.
   word = WordGenerator.new
 
@@ -49,7 +49,7 @@ loop do
   guess = GuessChecker.new(word.word)
   guess.create_hidden_word
   hangman = Hangman.new
-  
+
   system 'clear'
 
   # Loops through the hangman game and displays and ASCII cat.
@@ -70,7 +70,7 @@ loop do
     Screens.lose
   end
 
-  # Provides the user to exit or continue. This user is prompted 
+  # Provides the user to exit or continue. This user is prompted
   # to retry their entry until it is 'y' or 'n'.
   puts "\nPlay again? (y or n)"
   response = STDIN.gets.strip

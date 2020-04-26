@@ -1,3 +1,5 @@
+# This file is designed to run tests to check the game functions as expected.
+
 require 'test/unit'
 require 'random_word_generator'
 require 'tty-prompt'

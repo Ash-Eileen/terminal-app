@@ -2,7 +2,7 @@
 class Hangman
   attr_accessor :guesses, :hangman
 
-  # This method initialises the number of guesses at 0 and contains 
+  # This method initialises the number of guesses at 0 and contains
   # the full hangman image. The hangman has been displayed in an array
   # to provide more readability to the code.
   def initialize
