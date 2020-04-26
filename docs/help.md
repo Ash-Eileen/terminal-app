@@ -1,4 +1,4 @@
-![](C:\Users\Ashley\projects\terminal-app\docs\welcome_screen.png)
+![Welcome Screen](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/welcome_screen.png)
 
 # **Installation Instructions**
 
