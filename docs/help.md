@@ -6,7 +6,7 @@
 
 2. If you do not have bundler installed on your computer please run the following command line instruction to install this gem:
 
-   `install bundler`
+   `gem install bundler`
 
 3. Clone the files from this repository by using the following command line instruction:
 
