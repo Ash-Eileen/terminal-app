@@ -46,7 +46,31 @@ If the file launched includes both single-player and multi-player the menu will 
 
 ![Menu Screen](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/menu.png)
 
-If the user selects single-player mode or has launched the single player only mode then a 
+If the user selects single-player mode or has launched the single player only mode then a screen will be displayed stating that a random word has been generated.
+
+![Single-Player Screen](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/single_player.png)
+
+If the user selects multi-player mode or has launched the multi-player only mode then a screen will be displayed stating that one player will need to enter a word and will prompt the guessers to look away.
+
+![Multi-Player Screen 1](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/multi_1.png)
+
+A player will then be prompted to enter a word to be guessed. This entry will be checked to ensure that it does not contain any special characters or numbers. If the entry does contain any characters that are not allowed the user will be prompted to re-enter the word until it meets the requirements.
+
+![Multi-Player Screen 2](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/multi_2.png)
+
+From here the guesses can enter words or letters to guess. The guessers input will be checked to ensure it has not been guessed previously and that it doesn't contain any special characters or numbers. This entry will be checked to ensure that it does not contain any special characters or numbers. If the entry does contain any characters that are not allowed the user will be prompted to re-enter their guess until it meets the requirements. Any invalid entries will not count towards the guesses.
+
+If the user guesses right they will see the winning screen.
+
+![Winning Screen](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/win.png)
+
+If the user runs out of guesses they will see the loss screen.
+
+![Loss Screen](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/loss.png)
+
+At this point the user will have the opportunity to exit or play again. If they choose to play again they will either be taken the menu screen if they launched the the file launched including both single-player and multi-player the menu will then be displayed or they will be taken the respective multi-player or single-player screen as described above.
+
+This will continue until the user elects to exit the game.
 
 ------
 
