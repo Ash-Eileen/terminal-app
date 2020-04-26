@@ -132,8 +132,6 @@ For the creation of this application I used a mix of manual testing and tests th
 | **Command Line Arguments Load Correct Game Mode**            | With no command line argument the full game will launch including the menu. If "single" is entered as a command line argument the welcome screen will load and then proceed to the single-player mode. If "multi" is entered the welcome screen will load and then proceed to multi-player mode. On game end and choosing to continue the game will loop back to the correct game mode per the command line argument. | As expected                                                  | Nil                                                          |
 | **Executable Files Run Correctly**                           | All gems will be installed and correct game mode will be launched. | As expected                                                  | Nil                                                          |
 
-
-
 ------
 
 ## **Installation Instructions**
