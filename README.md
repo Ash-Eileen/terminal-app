@@ -1,6 +1,6 @@
 # **Welcome to Hangman! 👋**
 
-[Github Repository](https://github.com/Ash-Eileen/terminal-app)
+[GitHub Repository](https://github.com/Ash-Eileen/terminal-app)
 
 ## Table of Contents
 
