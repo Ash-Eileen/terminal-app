@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [Related Documents](https://github.com/Ash-Eileen/terminal-app#related-documents)
 - [Software Development Plan](https://github.com/Ash-Eileen/terminal-app#software-development-plan)
 - [Statement of Purpose and Scope](https://github.com/Ash-Eileen/terminal-app#statement-of-purpose-and-scope)
 - [Features](https://github.com/Ash-Eileen/terminal-app#features)
