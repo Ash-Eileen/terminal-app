@@ -1,4 +1,7 @@
+# This module contains all of the ASCII images utilised through the hangman application.
+
 module Images
+  # Displays the Hangman logo to screen with the selected colours.
   def self.title
     puts '        ██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗'.colorize(:light_green)
     puts '        ██║  ██║██╔══██╗████╗  ██║██╔════╝ ████╗ ████║██╔══██╗████╗  ██║'.colorize(:light_red)
@@ -8,6 +11,7 @@ module Images
     puts '        ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝'.colorize(:light_yellow)
   end
 
+  # Holds the image of the cat displayed while user guesses the word.
   def self.small_cat
     "\n    |\\      _,,,---,,_
     /,`.-'`'    -.  ;-;;,_
@@ -15,6 +19,7 @@ module Images
   '---''(_/--'  `-' \_)"
   end
 
+  # Holds the image of the cat displayed in the menu screen and all instruction screens.
   def self.menu_cat
     "\n  _
   \\`*-.
@@ -33,6 +38,7 @@ module Images
   `*-*   `*-*  `*-*'\n"
   end
 
+  # Holds the image of the cat displayed in the game won screen.
   def self.game_won_cat
     '                 .............                .""".             .""".
          ..."""""             """""...       $   . ".         ." .   $
@@ -57,6 +63,7 @@ module Images
                """.$.$.$.$.....$.$.""""               ""..$..$."..$..$."'
   end
 
+  # Holds the image of the cat displayed in the game lost screen.
   def self.game_lost_cat
     "\n         '.-----/`.
          /       '/

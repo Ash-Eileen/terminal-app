@@ -1,5 +1,7 @@
 # **Welcome to Hangman! 👋**
 
+[Github Repository](https://github.com/Ash-Eileen/terminal-app)
+
 ## Table of Contents
 
 - [Software Development Plan](https://github.com/Ash-Eileen/terminal-app#software-development-plan)
