@@ -5,10 +5,10 @@
 - [Software Development Plan](https://github.com/Ash-Eileen/terminal-app#software-development-plan)
 - [Features](https://github.com/Ash-Eileen/terminal-app#features)
 - [User Interaction and Experience](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
-- [Control Flow Diagram](https://github.com/Ash-Eileen/terminal-app#user-interaction-and-experience)
+- [Control Flow Diagram](https://github.com/Ash-Eileen/terminal-app#control-flow-diagram)
 - [Implementation Plan](https://github.com/Ash-Eileen/terminal-app#implementation-plan)
 - [Installation Instructions](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
-- [Resources](https://github.com/Ash-Eileen/terminal-app#installation-instructions)
+- [Resources](https://github.com/Ash-Eileen/terminal-app#resources)
 
 ## **Software Development Plan**
 
@@ -103,6 +103,8 @@ On day one I came to my educators with four ideas. I was leaning towards Hangman
 ------
 
 ## **Installation Instructions**
+
+Please note: this information is included in the help.md file in the docs folder [here](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/help.md).
 
 1. If you do not have Ruby installed on your computer, please go to this [page](https://www.ruby-lang.org/en/documentation/installation/) and follow the installation instructions.
 
