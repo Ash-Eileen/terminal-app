@@ -24,14 +24,14 @@ end
 loop do
   system 'clear'
 
-  # Displays the menu and hides the cursor if no command line arguments
-  # are entered.
-  selection = CURSOR.invisible { Screens.display_menu } if ARGV.empty?
-
   # Initialises the WordGenerator class so that a word can be either
   # randomly created in single-player mode or can be entered by
   # a user in multi-player mode.
   word = WordGenerator.new
+
+  # Displays the menu and hides the cursor if no command line arguments
+  # are entered.
+  selection = CURSOR.invisible { Screens.display_menu } if ARGV.empty?
 
   # Launches the game mode depending on the selection made in the menu
   # or if command line arguments are entered when the game is launched.

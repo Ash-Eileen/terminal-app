@@ -33,7 +33,7 @@ module Screens
     puts "\n\n"
     Images.title
     puts Images.menu_cat.colorize(:magenta)
-    selection = prompt.select('What would you like to do?', menu_options)
+    selection = prompt.select('What would you like to do?', (menu_options))
   end
 
   # Displays the ASCII winning cat and message advising the game was won.
