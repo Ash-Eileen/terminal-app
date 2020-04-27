@@ -84,6 +84,8 @@ A player will then be prompted to enter a word to be guessed. This entry will be
 
 From here the guesses can enter words or letters to guess. The guessers input will be checked to ensure it has not been guessed previously and that it doesn't contain any special characters or numbers. This entry will be checked to ensure that it does not contain any special characters or numbers. If the entry does contain any characters that are not allowed the user will be prompted to re-enter their guess until it meets the requirements. Any invalid entries will not count towards the guesses.
 
+![Hangman Guessing Screen](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/hangman_guessing_screen.png)
+
 If the user guesses right they will see the winning screen.
 
 ![Winning Screen](https://github.com/Ash-Eileen/terminal-app/blob/master/docs/win.png)
